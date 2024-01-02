@@ -2,9 +2,10 @@ echo "******************* Welcome to STACK 13 *****************************"
 
 deck=(1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13 1 2 3 4 5 6 7 8 9 10 11 12 13)
 
-#Distributing Cards
+#Shuffling Cards
 deck=( $(shuf -e "${deck[@]}") )
-	
+
+#Distributing Cards
 for i in 0 1 2 3 4 5 6 7 8 9 10 11 12 
 do
 	computer+=(${deck[$i]})	
